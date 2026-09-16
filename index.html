@@ -3,34 +3,44 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blog</title>
+        <title>Blog - Curiosidades sobre os gatos</title>
         <style>
+            body {
+                background-color: #0b2d4d; /* Cor aplicada no fundo todo da página */
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+
             header {
                 background-color: #ACC8E5;
                 color: #112A46;
-                text-align: center; /* Centraliza os textos do cabeçalho */
+                text-align: center;
                 max-width: 800px;
-                margin: 0 auto;
+                margin: 20px auto;
                 padding: 16px;
                 border: 5px solid #87CEFA;
+                box-sizing: border-box;
             }
 
             main {
-                background-color: #0b2d4d;
                 color: #7EC0EE;
-                text-align: center; /* Centraliza os textos dentro do main */
+                text-align: center;
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
                 display: flex;
-                flex-direction: column; /* Coloca os elementos um embaixo do outro */
-                align-items: center; /* Centraliza a imagem e os blocos no meio */
+                flex-direction: column;
+                align-items: center;
                 justify-content: center;
+                box-sizing: border-box;
             }
 
             main img {
                 width: 80px;
                 height: 80px;
+                object-fit: cover;
+                border-radius: 50%; /* Deixa a imagem redondinha */
             }
 
             .artigo-autor {
