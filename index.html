@@ -29,20 +29,30 @@
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
+                display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 box-sizing: border-box;
             }
-            article{
+
+            article {
                 display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 20px;
+                background-color: rgba(255, 255, 255, 0.05);
+                padding: 15px;
+                border-radius: 8px;
             }
+
             main img {
                 width: 150px;
                 height: 150px;
                 object-fit: cover;
                 border-radius: 50%;
             }
+
             .artigo-autor {
                 font-weight: bold;
             }
@@ -51,39 +61,37 @@
     <body> 
         <header>
             <h1>Curiosidades sobre os gatos</h1>
-            <h2></h2>
             <p>Vou compartilhar curiosidades sobre os gatos</p>
         </header>
         
         <main>
             <article>
-            <img src="imagem_blog" alt="Foto sobre gatos">   
-            <div>
-                <h2>Meu primeiro post</h2>
-                <p class="artigo-autor">Por: Karine Almeida</p> 
-                <p>Sejam bem-vindos ao meu novo blog! Aqui vou compartilhar curiosidades sobre os gatos</p>
-                <button>💙 <span>0</span></button>
-                <button>👎 <span>0</span></button>
-            </div>
+                <img src="imagem_blog" alt="Foto sobre gatos">   
+                <div>
+                    <h2>Meu primeiro post</h2>
+                    <p class="artigo-autor">Por: Karine Almeida</p> 
+                    <p>Sejam bem-vindos ao meu novo blog! Aqui vou compartilhar curiosidades sobre os gatos</p>
+                    <button>💙 <span>0</span></button>
+                    <button>👎 <span>0</span></button>
+                </div>
             </article>
-                <article>
-            <img src="imagem_blog" alt="Foto sobre gatos">   
-            <div>
-                <h2>Meu primeiro post</h2>
-                <p class="artigo-autor">Por: Karine Almeida</p> 
-                <p>Sejam bem-vindos ao meu novo blog! Aqui vou compartilhar curiosidades sobre os gatos</p>
-                <button>💙 <span>0</span></button>
-                <button>👎 <span>0</span></button>
-            </div>
-                </article>
+
+            <article>
+                <img src="imagem_blog" alt="Foto sobre gatos">   
+                <div>
+                    <h2>Meu segundo post</h2>
+                    <p class="artigo-autor">Por: Karine Almeida</p> 
+                    <p>Mais curiosidades incríveis sobre o comportamento dos felinos!</p>
+                    <button>💙 <span>0</span></button>
+                    <button>👎 <span>0</span></button>
+                </div>
+            </article>
         </main>
     </body>
     <script>
-        // Correção de querySelectorAll e do nome dos seletores
         const botoes = document.querySelectorAll("button");
 
         botoes.forEach(function(botao) {
-            // Correção de addEventListener (L maiúsculo) e estrutura da função
             botao.addEventListener("click", function() {
                 console.log("fui clicado");
                 let texto = botao.querySelector("span");
@@ -91,4 +99,4 @@
             });
         });
     </script>
-    </html>
+</html>
